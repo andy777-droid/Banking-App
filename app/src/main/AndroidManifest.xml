@@ -19,7 +19,8 @@
         <activity android:name="com.example.SisonkeBankApp.Registration" />
         <activity
             android:name="com.example.SisonkeBankApp.Login"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

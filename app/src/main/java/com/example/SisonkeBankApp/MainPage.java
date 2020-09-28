@@ -36,6 +36,7 @@ public class MainPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent balance = new Intent(MainPage.this, ViewAccount.class);
                 startActivity(balance);
+
             }
         });
 
@@ -44,6 +45,7 @@ public class MainPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent transfer = new Intent(MainPage.this, Transfer.class);
                 startActivity(transfer);
+
             }
         });
 
@@ -53,7 +55,10 @@ public class MainPage extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "User logged out successfully!", Toast.LENGTH_SHORT).show();
                 Intent logout = new Intent(MainPage.this, Login.class);
                 startActivity(logout);
+                finish();
             }
         });
+
+
     }
 }
